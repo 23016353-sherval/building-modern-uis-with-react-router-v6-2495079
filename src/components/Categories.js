@@ -11,7 +11,7 @@ export default function Categories() {
         {categories.map(cat => (
           <li key={cat.id}>
             <NavLink
-              className={({ isActive }) =>
+              className={({ isActive }) => 
                 isActive ? "category-active" : null
               }
               to={cat.id}
@@ -21,7 +21,9 @@ export default function Categories() {
           </li>
         ))}
       </ul>
+
       <Outlet />
     </div>
   );
 }
+
